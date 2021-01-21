@@ -5,12 +5,26 @@ header div, header nav{
     display: inline-block;
     vertical-align: middle;
     justify-content: stretch;
+    
 }
 
 li{
     display: flex;
-    display: inline;
+    display: inline-block;
     list-style: none;
     margin: 10px;
 }
 
+nav{
+    float: right;
+    }
+
+
+#logo img{
+width: 90px;
+height: 90px;
+}
+
+h1{
+    font-size: 20px;
+}
