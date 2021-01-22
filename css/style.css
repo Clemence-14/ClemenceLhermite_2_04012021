@@ -11,6 +11,13 @@ header div, header nav{
 #logo img{
     width: 50px;
 }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 li{
     display: flex;
     display: inline-block;
@@ -21,6 +28,45 @@ li{
 
 h1{
     font-size: 20px;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.03em;
+    margin-block-end: 0.03em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.filter{
+    display: flex;
+    margin: 0 1rem;
+    border-radius: 1rem;
+}
+
+i{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: lightblue;
+    border-radius: 1.5rem;
+}
+
+input {
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+
+
+div filter{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: blueviolet;
 }
 
 #conteneur2{

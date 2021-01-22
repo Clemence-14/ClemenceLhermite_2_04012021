@@ -33,33 +33,49 @@
             </header>
             
             <section class="intro">
-             <div class="h1, p">
+             <div class="pagetitle">
              <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
              <p>En plein centre ville ou en pleine nature</p>
             </div>
 
-            <div class="Formulaire de recherche">
-            <form method="POST" action="traitement.php">
+            <div class="Search">
+            <form method="POST">
                 <p>
-                <label><i class="fas fa-map-marker-alt"></i></label> : <input type="text" name="ville, pays" id="ville, pays" placeholder="Marseille, France"/>
-                <input type="submit" value="Rechercher"/>
+                <label for="location"<i class="fas fa-map-marker-alt"></i></label> 
+                 <input type="text" name="Location" id="Location" placeholder="Marseille, France"/>
+                 <input type="submit" value="Rechercher"/>
             </p>
             </form>
             </div>
 
-            <div class="Filtres et informations">
-                <p>Filtres
-                    <i class="fas fa-money-bill-wave"></i><input type="text" name="Economique" id="Economique" placeholder="Economique"/>
-                    <i class="fas fa-child"></i><input type="text" name="Familial" id="Familial" placeholder="Familial"/>
-                    <i class="fas fa-heart"></i><input type="text" name="Romantique" id="Romantique" placeholder="Romantique"/>
-                    <i class="fas fa-dog"></i><input type="text" name="Animaux autorisés" placeholder="Animaux autorisés"/><br>
-                    <p>
-                        <i class="fas fa-info-circle"></i>
+            <div class="filter">
+                <h2>Filtres</h2>
+                <div class="filters-content">
+                    <div class="filter">
+                        <i class="fas fa-money-bill-wave"></i><input type="text" name="Economique" id="Economique" placeholder="Economique"/>
+                        </div>
+                        </div>
+                        
+                        <div class="filters-content">
+                            <div class="filter">
+                                <i class="fas fa-child"></i><input type="text" name="Familial" id="Familial" placeholder="Familial"/>
+                                </div>
+                                </div>
 
-                        Plus de 500 logements sont disponibles dans cette ville</p>
-                    </p>
+                                <div class="filters-content">
+                                    <div class="filter">
+                                        <i class="fas fa-heart"></i><input type="text" name="Romantique" id="Romantique" placeholder="Romantique"/>
+                                        </div>
+                                        </div>
+
+                                        <div class="filter-content">
+                                            <div class="filter">
+                                                <i class="fas fa-dog"></i><input type="text" name="Animaux autorisés" placeholder="Animaux autorisés"/>
+                                                </div>
+                                                </div>
 
              </div>
+             <p> <i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
         <section class="hebergements">
