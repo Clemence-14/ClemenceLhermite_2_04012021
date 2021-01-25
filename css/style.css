@@ -1,4 +1,4 @@
-html{
+html {
     font-size: 16px;
 }
 header div, header nav{
@@ -66,6 +66,6 @@ footer{
     justify-content: space-around;
 }
 
-.vignettes-hotel{
-    width: 50px;
+#researchvalue{
+    background-color: blue;
 }
