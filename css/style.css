@@ -9,7 +9,7 @@ header div, header nav{
 }
 
 #logo img{
-    width: 50px;
+    width: 60px;
 }
 
 header{
@@ -49,6 +49,7 @@ h2{
 i{
     font-size: 1.5rem;
     padding: 0.5rem;
+    color: blue;
     background-color: lightblue;
     border-radius: 1.5rem;
 }
@@ -59,18 +60,12 @@ input {
 }
 
 
-
-div filter{
+footer{
     display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 1.5rem;
-    background-color: blueviolet;
+    align-items: stretch;
+    justify-content: space-around;
 }
 
-#conteneur2{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.vignettes-hotel{
+    width: 50px;
 }
