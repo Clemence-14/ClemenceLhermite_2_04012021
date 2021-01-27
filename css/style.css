@@ -72,12 +72,6 @@ img {
     grid-gap: 1.5rem;
 }
 
-.Marseille {
-    display: grid;
-    grid-template-columns: 7fr;
-
-}
-
 .hebergements > div {
     padding: 1rem;
     background-color: #f2f2f2;
