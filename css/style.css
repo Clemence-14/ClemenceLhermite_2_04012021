@@ -43,10 +43,9 @@ h2{
 }
 
 i{
-    font-size: 1.5rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+    padding: 0rem;
     color: #0065FC;
-    background-color: #DEEBFF;
     border-radius: 1.5rem;
 }
 
@@ -58,8 +57,7 @@ input {
 
 footer{
     display: flex;
-    align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 img {
@@ -142,4 +140,8 @@ img {
     display: grid;
     grid-template-columns: 3fr 7fr;
     grid-gap: 0.5rem;
+}
+
+.searchfas  {
+    background-color: yellowgreen;
 }
