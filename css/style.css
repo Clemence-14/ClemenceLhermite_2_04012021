@@ -71,7 +71,7 @@ img {
 }
 
 .hebergements > div {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #f2f2f2;
     border-radius: 1.5rem;
 }
@@ -79,7 +79,7 @@ img {
 .hebergements .hotels .vignettes .vignette {
     margin-bottom: 1.5rem;
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 1fr;
     grid-gap: 0.5rem;
 }
 
@@ -87,15 +87,23 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
 }
 
 .vignette {
     padding: 0.25rem;
     background-color:white;
     border-radius: 1rem;
+    margin-bottom: 1.5rem;
 }
+
+.vignettes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+}
+
 
 .vignette img {
     height: 150px;
@@ -112,10 +120,16 @@ img {
     grid-gap: 0.5rem;
 }
 
-.hebergements .populaires .vignettes .vignette img {
-    border-top-right-radius: 0;
+.populaires .vignette img {
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    max-width: 40%;
+    grid-gap: 1.5rem;
+    border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0;
 }
+
 
 .activites {
     display: grid;
@@ -142,6 +156,3 @@ img {
     grid-gap: 0.5rem;
 }
 
-.searchfas  {
-    background-color: yellowgreen;
-}
