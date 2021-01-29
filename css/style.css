@@ -76,26 +76,16 @@ img {
     border-radius: 1.5rem;
 }
 
-.hebergements .hotels .vignettes .vignette {
-    margin-bottom: 1.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 0.5rem;
-}
-
-.hebergements .hotels .vignettes .vignette img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: 0;
-}
-
 .vignette {
+    display: inline-block;
     padding: 0.25rem;
     background-color:white;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
+}
+.imageflottante {
+    float: left;
+    padding: 0.25rem;
 }
 
 .vignettes {
@@ -133,7 +123,7 @@ img {
 
 .activites {
     display: grid;
-    grid-template-columns: 7fr 3fr;
+    grid-template-columns: 1fr;
     grid-gap: 1.5rem;
 }
 
@@ -143,16 +133,11 @@ img {
     border-radius: 1.5rem;
 }
 
-.activites .vignettesactivite .vignettes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.5rem;
-} 
-
-.activites .vignettesactivite .vignettes .vignette img {
-    margin-bottom: 1.5rem;
-    display: grid;
-    grid-template-columns: 3fr 7fr;
-    grid-gap: 0.5rem;
+.images .vignette {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
 }
 
