@@ -5,6 +5,7 @@ html{
 
 #logo img{
     width: 60px;
+    height: 40px;
 }
 
 header{
@@ -18,8 +19,13 @@ li{
     display: inline-block;
     list-style: none;
     margin: 10px;
+    text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 h1{
     font-size: 20px;
@@ -52,7 +58,32 @@ h2{
 .filters .filter {
     border: 1px solid #f2f2f2;
     border-radius: 1rem;
+    border-width: 2px;
+    border-color: #f2f2f2;
 }
+
+
+input[type=submit] {
+    background-color: #0065fc;
+    color: white;
+    padding: 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+input[type=text] {
+    border: 1px solid #f2f2f2;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    border-color: blue;
+}
+
+input[type=texte] {
+    border: 1px solid #f2f2f2;
+    padding: 0.5rem;
+}
+
 
 .filters-content .filter .fas {
     color: #0065fc;
@@ -185,4 +216,26 @@ p {
 
 .activites {
     padding-top: 1.5rem;
+}
+
+.activites .vignettes {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+.activites .vignettes-activites .vignettes .vignette {
+    box-shadow: 1px 1px 12px #f2f2f2;
+}
+
+.activites .vignettes-activites .vignettes .vignette-height {
+    box-shadow: 1px 1px 12px #f2f2f2;
+    border-radius: 1rem;
+    grid-row: 1/3;
+    padding: 0.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.vignette-height img {
+    border-radius: 1rem;
 }
