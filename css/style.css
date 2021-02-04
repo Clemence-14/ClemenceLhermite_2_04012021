@@ -42,6 +42,7 @@ h2{
     font-weight: bold;
 }
 
+
 .filters {
     display: flex;
     align-items: center;
@@ -216,9 +217,9 @@ p {
 
 .activites {
     padding-top: 1.5rem;
-}
+    }
 
-.activites .vignettes {
+.activites .vignettes-activites .vignettes {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1.5rem;
@@ -237,5 +238,11 @@ p {
 }
 
 .vignette-height img {
-    border-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
+
+.activites .imageflottante {
+    float: right;
+}
+    
