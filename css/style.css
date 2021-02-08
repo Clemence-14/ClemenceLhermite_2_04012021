@@ -15,7 +15,6 @@ header{
 }
 
 li{
-    display: flex;
     display: inline-block;
     list-style: none;
     margin: 10px;
@@ -45,8 +44,7 @@ h2{
 
 .filters {
     display: flex;
-    align-items: center;
-    margin-left: 1.5rem;
+    margin-left: 0.5rem;
 }
 
 .filter {
@@ -142,7 +140,6 @@ img {
     display: grid;
     grid-template-columns: 7fr 3fr;
     grid-gap: 1.5rem;
-    margin-top: 2rem;
 }
 
 .hebergements > div {
@@ -225,7 +222,7 @@ p {
 }
 
 .vignette-texte {
-    margin: 0.5 rem;
+    margin-left: 1rem;
 }
 
 .activites {
