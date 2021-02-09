@@ -195,6 +195,10 @@ img {
     margin: 0;
 }
 
+.Formline {
+    display: flex;
+    align-items: center;
+}
 
 p {
     display: block;
