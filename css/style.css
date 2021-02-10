@@ -9,6 +9,32 @@ html{
     object-fit: contain;
 }
 
+#menu a {
+    padding: 1rem 1rem 0;
+}
+
+#menu a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+.info .fas {
+    color: white;
+    background-color: #0065fc;
+    border-radius: 0.5rem;
+    margin-left: 2px;
+}
+
+.info p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.intro .pagetitle {
+    margin-left: 1rem;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -46,7 +72,8 @@ h2{
 
 .filters {
     display: flex;
-    margin-left: 0.5rem;
+    margin-left: 1rem;
+    align-items: center;
 }
 
 .filter {
@@ -56,7 +83,7 @@ h2{
 
 .filters .filter {
     border: 1px solid #f2f2f2;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     border-width: 2px;
     border-color: #f2f2f2;
 }
@@ -88,13 +115,22 @@ input[type=texte] {
 .filters-content .filter .fas {
     color: #0065fc;
     background-color: #deebff;
-    border-radius: 1rem;
-    padding: 0.5rem;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
 }
 
 .hebergements .stars {
     color: #0065fc;
     margin-bottom: 0.5rem;
+}
+
+.stars .disabled {
+    color: #f2f2f2;
+}
+
+.cta {
+    font-weight: bold;
+    font-size: 19px;
 }
 
 input {
@@ -114,8 +150,19 @@ label {
 
 footer {
 background-color: #f2f2f2;
-display: flex;
-justify-content: space-around;
+}
+
+.contenu-footer {
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+
+
+h4 {
+    padding-left: 3.2rem;
+    font-weight: bold;
 }
 
 .activites h3{
@@ -126,9 +173,6 @@ justify-content: space-around;
    margin-left: 0.5rem;
 }
 
-h4 {
-    text-align: center;
-}
 
 img {
     max-width: 100%;
@@ -199,6 +243,7 @@ img {
 .formline {
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
 

@@ -22,16 +22,18 @@
 <body>
 
     <header>
-        <div id="logo">
-            <img src="images/Reservia@3x.png" alt="Logo Reservia" />
-        </div>
+        <nav>
+        <ul id="logo">
+            <li><a href="index.html"><img src="images/Reservia@3x.png" alt="Logo Reservia" /></a></li>
+        </ul>
+        </nav>
 
 
         <nav>
             <ul id="menu">
-                <li><a href="#" style="color: #0065FC;">Hébergements</a></li>
-                <li><a href="#">Activités</a></li>
-                <li><a href="#" style="color: #0065FC;"><strong>S'inscrire</strong></a></li>
+                <li class="menu1"><a href="#">Hébergements</a></li>
+                <li class="menu2"><a href="#">Activités</a></li>
+                <li class="menu3"><a href="#"><strong>S'inscrire</strong></a></li>
             </ul>
         </nav>
     </header>
@@ -85,10 +87,11 @@
 
 
 
-
-    <p> <i class="fas fa-info-circle" style="color: #0065FC; background-color: white;"></i>Plus de 500 logements sont
+            <div class="info">
+    <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont
         disponibles dans cette ville</p>
-    </section>
+            </div>
+    
 
     <section class="hebergements">
 
@@ -109,7 +112,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -149,7 +152,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -169,8 +172,8 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -189,7 +192,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -214,17 +217,12 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-                <p class="cta">
-                    <a href="#">Afficher plus</a>
-                </p>
             </div>
-        </div>
-
-
+            <p class="cta">
+                <a href="#">Afficher plus</a>
+            </p>
+            </div>
+        
 
 
         <div class="populaires">
@@ -269,7 +267,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -291,7 +289,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star disabled"></i>
                         </div>
                     </div>
                 </div>
@@ -358,6 +356,7 @@
     </section>
 
     <footer>
+        <div class="contenu-footer">
         <div class="propos">
             <h4>A propos</h4>
             <nav>
@@ -388,6 +387,7 @@
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
             </nav>
+        </div>
         </div>
 
     </footer>
