@@ -53,6 +53,10 @@ a {
     color: black;
 }
 
+.stars a {
+    color: #0065fc;
+}
+
 h1{
     font-size: 20px;
 }
@@ -79,6 +83,10 @@ h2{
 .filter {
     display: inline-block;
     margin: 0 1rem;
+}
+
+.filters-content a:hover {
+    text-decoration: purple;
 }
 
 .filters .filter {
@@ -146,10 +154,8 @@ label {
     border-bottom-left-radius: 1rem;
 }
 
-
-
 footer {
-background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .contenu-footer {
@@ -303,3 +309,21 @@ img {
     min-height: 90%;
 }
 
+
+@media (max-width: 1024px) {
+    .hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .filters-content {
+     
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hebergements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
