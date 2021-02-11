@@ -315,9 +315,10 @@ img {
         display: flex;
         flex-direction: column-reverse;
     }
-    .filters-content {
-     
-    }
+    .filter {
+        display: flex;
+        flex-direction: row;
+        }
 }
 
 
