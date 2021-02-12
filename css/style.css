@@ -7,16 +7,36 @@ html{
     width: 80px;
     height: 60px;
     object-fit: contain;
+    display: inline-block;
 }
 
 #menu a {
     padding: 1rem 1rem 0;
+    display: inline-block;
+}
+
+#inscription a {
+    padding: 1rem 1rem 0;
+}
+
+#inscription a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
+
+header ul#inscription {
+    margin-right: 3em;
+}
+
+header ul#menu {
+    margin: 3em;
 }
 
 #menu a:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
 }
+
 
 .info .fas {
     color: white;
@@ -40,6 +60,7 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
 
 li{
     display: inline-block;
@@ -313,10 +334,9 @@ img {
         flex-direction: column-reverse;
     }
     .filter {
-        display: flex;
-        flex-direction: row;
+        margin-bottom: 0.5rem;
         }
-}
+     }
 
 
 @media (max-width: 767px) {
@@ -328,6 +348,8 @@ img {
     
     .hebergements >div {
         border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
      
     .hebergements .hotels {
@@ -344,13 +366,7 @@ img {
         margin-left: 1rem;
     }
    
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-        margin: 2rem;
-        
-    }
+    
     
     .filters-content .filter {
         margin-bottom: 1rem;
@@ -368,6 +384,22 @@ img {
         flex-direction: column;
         margin-top: 1rem;
         }
+
+    .activites .vignette {
+        padding: 0;
+        padding-bottom: 0.5rem;
+    }    
+
+    .activites .vignettes-activites .vignettes .vignette-height {
+        padding: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .activites .vignettes-activites .vignettes .vignette-height img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+    }
     
     .contenu-footer {
         display: flex;
@@ -378,5 +410,6 @@ img {
     footer {
         margin: 0;
     }
+
 
     }
