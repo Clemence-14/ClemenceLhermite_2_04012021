@@ -15,9 +15,11 @@ html{
     display: inline-block;
 }
 
+
 #inscription a {
     padding: 1rem 1rem 0;
 }
+
 
 #inscription a:hover {
     color: #0065fc;
@@ -106,6 +108,7 @@ h2{
     margin: 0 1rem;
 }
 
+
 .filters .filter {
     border: 1px solid #f2f2f2;
     border-radius: 1.5rem;
@@ -113,11 +116,12 @@ h2{
     border-color: #f2f2f2;
 }
 
-.filters a:hover{
-    background-color: #0065fc;
-    border-radius: 1rem;
-}
 
+.filter a:hover .fas {
+    background-color: green;
+    color: rgb(59, 230, 68);
+}
+ 
 input[type=submit] {
     background-color: #0065fc;
     color: white;
@@ -344,6 +348,13 @@ img {
 
 
 @media (max-width: 767px) {
+    #menu a:hover {
+        color: #0065fc;
+        border-top: none;
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 1rem;
+    }
+   
     .hebergements {
         max-width: 100%;
         display: flex;
@@ -360,6 +371,7 @@ img {
         background-color: white;
     }
 
+
     .hebergements .hotels .vignettes .vignette {
         box-shadow: 1px 1px 12px #f2f2f2;
     }
@@ -368,15 +380,30 @@ img {
         width: 100%;
         height: 100%;
         margin-left: 1rem;
+        border: 1px;
     }
    
-    
-    
-    .filters-content .filter {
-        margin-bottom: 1rem;
+    .filters {
+        display: inline-block;
+        text-align: left;
+        padding-top: 1rem;
+        }
+
+    .filters .filters-content .filter {
         margin-top: 1rem;
-       }
+        }
     
+    .filters-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filters-content .filter {
+        border-radius: 0.5rem;
+        text-align: start;
+    }
+    
+
     .hebergements .hotels .vignettes {
         display: flex;
         flex-direction: column;
