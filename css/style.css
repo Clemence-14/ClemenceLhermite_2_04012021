@@ -3,42 +3,29 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-#logo img {
-    width: 80px;
-    height: 60px;
-    object-fit: contain;
+header img {
+    margin-left: 2rem;
+    width: 100px;
     display: inline-block;
 }
 
-#menu a {
-    padding: 1rem 1rem 0;
-    display: inline-block;
-}
-
-
-#inscription a {
+ul.menu a:hover {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
     padding: 1rem 1rem 0;
 }
 
 
-#inscription a:hover {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
+.register {
+    order: 3;
+    margin-right: 3rem;
 }
 
-header ul#inscription {
-    margin-right: 3em;
-}
 
-header ul#menu {
-    margin: 3em;
+ul.menu {
+    display: flex;
+    justify-content: space-between;
 }
-
-#menu a:hover {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
-}
-
 
 .info .fas {
     color: white;
@@ -121,13 +108,18 @@ h5 {
     color: rgb(59, 230, 68);
 }
  
-input[type=submit] {
+button[type=submit] {
     background-color: #0065fc;
     color: white;
     padding: 0.5rem;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    border-width: 0px;
     cursor: pointer;
+}
+
+button[type=submit] i {
+    display: none;
 }
 
 input[type=text] {
@@ -347,13 +339,26 @@ img {
 
 
 @media (max-width: 767px) {
-    #menu a:hover {
-        color: #0065fc;
+
+    ul.menu a:hover {
         border-top: none;
         border-bottom: 2px solid #0065fc;
         padding-bottom: 1rem;
     }
    
+    .register {
+        display: flex;
+        order: 2;
+    }
+   
+    button[type=submit] span {
+        display: none;
+    }
+
+    button[type=submit] i {
+        display: inline;
+    }
+
     .hebergements {
         max-width: 100%;
         display: flex;
@@ -375,15 +380,10 @@ img {
         box-shadow: 1px 1px 12px #f2f2f2;
     }
     
-    ul#logo {
-        width: 100%;
-        height: 100%;
-        margin-left: 1rem;
-        border: 1px;
-    }
+  
    
     .filters {
-        display: inline-block;
+        display: block;
         text-align: left;
         padding-top: 1rem;
         }
@@ -393,22 +393,17 @@ img {
         }
     
     .filters-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: block;
+        
     }
 
     .filters-content .filter {
-        border-radius: 1rem;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
         width: auto;
     }
 
-    .filter {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-
+   
     .hebergements .hotels .vignettes {
         display: flex;
         flex-direction: column;
