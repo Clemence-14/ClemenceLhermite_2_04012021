@@ -188,6 +188,20 @@ footer {
     padding-top: 1rem;
 }
 
+.assistance ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergement ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.propos ul {
+    display: flex;
+    flex-direction: column;
+}
 
 h4 {
     padding-left: 3.2rem;
@@ -347,7 +361,7 @@ img {
 @media (max-width: 767px) {
 
     header a.img {
-        width: 100%;
+        width: 100px;
         height: 150px;
         object-fit: cover;
     }
@@ -366,7 +380,7 @@ img {
     }
 
     nav.register ul.menu1 {
-        padding-left: 0;
+        padding: 0;
         margin-top: 0;
         margin-right: 0;
     }
