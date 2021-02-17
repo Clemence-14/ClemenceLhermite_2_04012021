@@ -6,19 +6,18 @@ html {
 header img {
     margin-left: 2rem;
     width: 100px;
-    display: inline-block;
-}
+    }
 
 ul.menu a:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding: 1rem 1rem 0;
+    padding: 1rem;
 }
 
 ul.menu1 a:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding: 1rem 1rem 0;
+    padding: 1rem;
 }
 
 
@@ -171,6 +170,12 @@ input {
     padding: 1px 2px;
 }
 
+.formline {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
 label {
     padding: 0.5rem;
     background-color: #f2f2f2;
@@ -283,13 +288,6 @@ img {
 .populaires .vignette p {
     margin: 0;
 }
-
-.formline {
-    display: flex;
-    align-items: center;
-    margin-left: 1rem;
-}
-
 
 .populaires .vignette-contenu {
     display: flex;
