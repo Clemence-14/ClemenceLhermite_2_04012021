@@ -27,7 +27,6 @@ ul.menu1 a:hover {
     margin-right: 3rem;
 }
 
-
 ul.menu {
     display: flex;
     justify-content: space-between;
@@ -58,10 +57,12 @@ header{
 
 
 li{
-    display: inline-block;
     list-style: none;
-    margin: 10px;
-    text-decoration: none;
+    margin: 2rem;
+}
+
+footer li {
+    margin: 0.5rem;
 }
 
 a {
