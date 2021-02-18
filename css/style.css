@@ -313,7 +313,6 @@ img {
 
 .activites .vignettes-activites .vignettes {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 1.5rem;
     padding-top: 1.5rem;
 }
