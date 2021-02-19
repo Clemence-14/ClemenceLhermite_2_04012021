@@ -376,10 +376,13 @@ img {
         margin-left: 3rem;
     }
 
-    nav.register ul.menu1 {
-        padding: 0;
-        margin-top: 0;
-        margin-right: 0;
+    ul.menu1 li {
+        padding-right: 0;
+        margin-left: auto;
+    }
+
+    ul.menu1 {
+        padding-left: 0;
     }
 
      ul.menu1 a:hover {
@@ -387,6 +390,12 @@ img {
         border-bottom: 2px solid #0065fc;
         padding-bottom: 1rem;
     }
+
+    nav.register {
+        margin-right: 5rem;
+        font-weight: bold;
+    }
+
 
     .register {
         display: flex;
