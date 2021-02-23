@@ -3,16 +3,30 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-header img {
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header img {
     margin-left: 2rem;
     width: 100px;
     }
 
-ul.menu a:hover {
+body > header nav ul.menu a {
+        padding: 1rem 1rem 0;
+    }
+
+body > header nav ul.menu a:hover {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding: 1rem;
 }
+
+body > header nav:not(.register) {
+    margin-left: auto;
+}
+
 
 ul.menu1 a:hover {
     color: #0065fc;
@@ -21,14 +35,16 @@ ul.menu1 a:hover {
 }
 
 
-.register {
+body > header nav.register {
     order: 3;
-    margin-right: 3rem;
 }
 
-ul.menu {
+body > header nav ul.menu {
     display: flex;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .info .fas {
@@ -48,14 +64,8 @@ ul.menu {
     margin-left: 1rem;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-
-li{
+li {
     list-style: none;
     margin: 2rem;
 }
@@ -73,12 +83,12 @@ a {
     color: #0065fc;
 }
 
-h1{
+h1 {
     font-size: 20px;
 }
     
 
-h2{
+h2 { 
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
@@ -110,7 +120,7 @@ h5 {
     color: rgb(59, 230, 68);
 }
  
-button[type=submit] {
+button[type="submit"] {
     background-color: #0065fc;
     color: white;
     padding: 0.5rem;
@@ -120,11 +130,11 @@ button[type=submit] {
     cursor: pointer;
 }
 
-button[type=submit] i {
+button[type="submit"] i {
     display: none;
 }
 
-input[type=text] {
+input[type="text"] {
     border: 1px solid #f2f2f2;
     padding: 0.5rem;
     border: none;
@@ -132,7 +142,7 @@ input[type=text] {
     border-color: blue;
 }
 
-input[type=url] {
+input[type="url"] {
     border: 1px solid #f2f2f2;
     padding: 0.5rem;
     font-weight: bold;
@@ -210,7 +220,7 @@ h4 {
     font-weight: bold;
 }
 
-.activites h3{
+.activites h3 {
     padding-left: 1rem;
 }
 
@@ -241,7 +251,7 @@ img {
 
 .vignette {
     padding: 0.25rem;
-    background-color:white;
+    background-color: white;
     border-radius: 1rem;
     margin-bottom: 1.5rem;
 }
@@ -356,6 +366,24 @@ img {
 
 
 @media (max-width: 767px) {
+    body > header {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    body > header nav:not(.register) {
+        order: 3;
+        margin: 1rem 0;
+        flex: 0 0 100%;
+        align-items: center;
+    }
+
+    body > header nav.register {
+        order: 2;
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
 
     header a.img {
         width: 100px;
@@ -363,54 +391,37 @@ img {
         object-fit: cover;
     }
 
-    ul.menu a:hover {
+    body > header nav ul.menu a:hover, 
+    body > header nav.register ul.menu a:hover {
         border-top: none;
         border-bottom: 2px solid #0065fc;
         padding-bottom: 1rem;
     }
    
-    ul.menu {
-        padding-left: 0;
-        margin-bottom: 0;
-        margin-top: 4rem;
-        margin-left: 3rem;
+    body > header nav ul.menu li {
+        margin: 0;
     }
 
-    ul.menu1 li {
-        padding-right: 0;
-        margin-left: auto;
+    body > header ul.menu li a {
+        padding-bottom: 15px;
     }
 
-    ul.menu1 {
-        padding-left: 0;
-    }
 
-     ul.menu1 a:hover {
+    body > header nav.register ul.menu a:hover {
         border-top: none;
         border-bottom: 2px solid #0065fc;
         padding-bottom: 1rem;
-    }
-
-    nav.register {
-        margin-right: 5rem;
-        font-weight: bold;
-    }
-
-
-    .register {
-        display: flex;
-        order: 2;
     }
 
     .intro {
         margin-top: 2rem;
     }
    
-    button[type=submit] span {
+    button[type="submit"] span {
         display: none;
     }
 
-    button[type=submit] i {
+    button[type="submit"] i {
         display: inline;
     }
 
@@ -420,7 +431,7 @@ img {
         flex-direction: column-reverse;
     }
     
-    .hebergements >div {
+    .hebergements > div {
         border-radius: 0;
         margin-left: 0;
         margin-right: 0;
