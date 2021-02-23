@@ -3,12 +3,18 @@ html {
     font-family: "Raleway", sans-serif;
 }
 
-header img {
+body > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body > header img {
     margin-left: 2rem;
     width: 100px;
 }
 
-body > header nav ul.menu a{
+body > header nav ul.menu a {
     padding: 1rem 1rem 0;
 }
 
@@ -53,12 +59,6 @@ body > header nav ul.menu {
 
 .intro .pagetitle {
     margin-left: 1rem;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 li {
@@ -352,48 +352,48 @@ img {
 }
 
 @media (max-width: 767px) {
+    body > header {
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    body > header nav:not(.register) {
+        order: 3;
+        margin: 1rem 0;
+        flex: 0 0 100%;
+        align-items: center;
+    }
+
+    body > header nav.register {
+        order: 2;
+        position: absolute;
+        top: 15px;
+        right: 0;
+    }
+
     header a.img {
         width: 100px;
         height: 150px;
         object-fit: cover;
     }
 
-    ul.menu a:hover {
+    body > header nav ul.menu a:hover,
+    body > header nav.register ul.menu a:hover {
         border-top: none;
         border-bottom: 2px solid #0065fc;
-        padding-bottom: 1rem;
     }
 
-    ul.menu {
-        padding-left: 0;
-        margin-bottom: 0;
-        margin-top: 4rem;
-        margin-left: 3rem;
+    body > header nav ul.menu li {
+        margin: 0;
     }
 
-    ul.menu1 li {
-        padding-right: 0;
-        margin-left: auto;
+    body > header nav ul.menu li a {
+        padding-bottom: 15px;
     }
 
-    ul.menu1 {
-        padding-left: 0;
-    }
-
-    ul.menu1 a:hover {
+    body > header nav.register ul.menu1 a:hover {
         border-top: none;
         border-bottom: 2px solid #0065fc;
-        padding-bottom: 1rem;
-    }
-
-    nav.register {
-        margin-right: 5rem;
-        font-weight: bold;
-    }
-
-    .register {
-        display: flex;
-        order: 2;
     }
 
     .intro {
