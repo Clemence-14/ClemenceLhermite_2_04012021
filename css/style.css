@@ -407,6 +407,30 @@ img {
         align-items: center;
         margin-left: 1rem;
     }
+
+    button[type="submit"] {
+        background-color: #0065fc;
+        color: white;
+        padding: 0.5rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-width: 0px;
+        cursor: pointer;
+    }
+
+    input[type="text"] {
+        border: 1px solid #f2f2f2;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 1rem;
+        border-color: blue;
+    }
+    
+    input[type="url"] {
+        border: 1px solid #f2f2f2;
+        padding: 0.5rem;
+        font-weight: bold;
+    }
    
     button[type="submit"] span {
         display: none;
