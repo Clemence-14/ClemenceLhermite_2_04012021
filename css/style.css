@@ -183,7 +183,7 @@ footer {
 
 .contenu-footer {
     display: flex;
-    padding: 30px;
+    padding: 20px;
     justify-content: space-around;
     padding-top: 1rem;
 }
@@ -400,6 +400,12 @@ img {
 
     .intro {
         margin-top: 2rem;
+    }
+
+    .formline {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
     }
    
     button[type="submit"] span {
