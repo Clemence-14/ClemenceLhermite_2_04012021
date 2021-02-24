@@ -236,6 +236,12 @@ img {
     border-radius: 1.5rem;
 }
 
+.hebergements .populaires header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .vignette {
     padding: 0.25rem;
     background-color: white;
